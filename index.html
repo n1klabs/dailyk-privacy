@@ -52,7 +52,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: April 17, 2026</p>
+        <p class="last-updated">Last updated: June 22, 2026</p>
 
         <p>Dailyk ("we", "our", or "the app") is a task management application for iOS. We are committed to protecting your privacy. This Privacy Policy explains what data we collect, how we use it, and your rights.</p>
 
@@ -88,7 +88,7 @@
         <p>Group data is shared with all members of the group and synced in real time. Only group members can access the group's data.</p>
 
         <h3>Subscription Data</h3>
-        <p>If you subscribe to Dailyk+, your subscription status (active/inactive, product ID, expiration date) is stored in Firestore linked to your group. Payment processing is handled entirely by Apple — we do not collect or store payment information, credit card numbers, or billing details.</p>
+        <p>Dailyk+ is an account-level subscription. Your subscription status (active/inactive, product ID, expiration date) is determined by Apple StoreKit. For groups you own, an active/inactive flag derived from this status is synced to your group documents in Firestore so that other members can see whether a group is active. Payment processing is handled entirely by Apple — we do not collect or store payment information, credit card numbers, or billing details.</p>
 
         <h2>2. How We Use Your Data</h2>
         <ul>
@@ -96,7 +96,7 @@
             <li><strong>Location reminders:</strong> To notify you about tasks when you are near a specified location</li>
             <li><strong>Personal tasks:</strong> To provide core task management features (stored locally)</li>
             <li><strong>Group tasks:</strong> To enable real-time task sharing and collaboration between group members</li>
-            <li><strong>Subscription:</strong> To manage Dailyk+ entitlements and group member limits</li>
+            <li><strong>Subscription:</strong> To manage Dailyk+ entitlements and the number of groups you can create (group members are unlimited in every tier)</li>
         </ul>
 
         <h2>3. Third-Party Services</h2>
@@ -114,7 +114,7 @@
             <li>Personal task data is stored locally on your device only</li>
             <li>Group task data is stored on Cloud Firestore (Google Cloud, europe-west3) and shared with group members</li>
             <li>Authentication data is managed by Firebase (hosted on Google Cloud infrastructure)</li>
-            <li>Subscription status is stored in Firestore linked to the group document</li>
+            <li>Subscription status is determined by Apple StoreKit at the account level; an active/inactive flag for groups you own is synced to Firestore so other members can see a group's status</li>
             <li>Location data is processed on-device and not stored externally</li>
             <li>We do not sell, share, or transfer your personal data to third parties for marketing or advertising purposes</li>
         </ul>
