@@ -52,7 +52,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: June 22, 2026</p>
+        <p class="last-updated">Last updated: June 28, 2026</p>
 
         <p>Dailyk ("we", "our", or "the app") is a task management application for iOS. We are committed to protecting your privacy. This Privacy Policy explains what data we collect, how we use it, and your rights.</p>
 
@@ -81,11 +81,13 @@
         <h3>Group Task Data</h3>
         <p>When you create or join a group, the following data is stored on Google Cloud Firestore (Firebase):</p>
         <ul>
-            <li><strong>Group information</strong> - group name, member list, invitation codes</li>
+            <li><strong>Group information</strong> - group name, member list, invitations (shared via a link or QR code)</li>
             <li><strong>Group tasks</strong> - task titles, descriptions, deadlines, assigned members, completion status</li>
             <li><strong>Member data</strong> - display names, user IDs, and roles within the group</li>
         </ul>
         <p>Group data is shared with all members of the group and synced in real time. Only group members can access the group's data.</p>
+
+        <p>Group invitations are shared as a link or QR code. If someone opens an invite link without the app installed, a static web page hosted on GitHub Pages opens to direct them to the App Store. Like any website, the hosting provider (GitHub) may log standard request data such as IP address; the page itself contains no analytics or tracking.</p>
 
         <h3>Subscription Data</h3>
         <p>Dailyk+ is an account-level subscription. Your subscription status (active/inactive, product ID, expiration date) is determined by Apple StoreKit. For groups you own, an active/inactive flag derived from this status is synced to your group documents in Firestore so that other members can see whether a group is active. Payment processing is handled entirely by Apple — we do not collect or store payment information, credit card numbers, or billing details.</p>
